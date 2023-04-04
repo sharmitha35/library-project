@@ -1,0 +1,123 @@
+
+<html>
+    <head>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        <style>
+            .page-centered {
+    width: 50%;
+    height: 30%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    font-family: sans-serif;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+.login-h1 {
+    font-weight: 100;
+    font-size: 1.8em;
+  font-weight: 100;
+    text-align: center;
+  font-family: sans-serif;
+    margin-bottom: 30px;
+}
+.form-input {
+  width:100%;
+  margin-bottom: 10px;
+    font-size: 0.85em;
+    font-weight: 100;
+    border-radius: 0px !important;
+    padding: 10px 20px;}
+    input, textarea, button, button:focus {
+    outline: none;
+    box-shadow:none !important;
+}
+.logo {
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    color: white;
+    border-radius: 50%;
+    background-color:#ff8b88;;
+    margin-bottom: 30px;
+}
+.logo p {
+    position: relative;
+    top: 50%;
+    text-align: center;
+    transform: translate(-1%,-50%);
+    -ms-transform: translateX(-1%) translateY(-50%);
+    -webkit-transform: translate(-1%,-50%);
+    font-size: 1.5em;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+.form-submit {
+    background-color: royalblue;
+    border: none;
+    font-weight: 100;
+    font-size: 1em;
+    color: white;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+.button {
+  background-color: #ff8b88;
+  
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+.button2 {padding: 12px 28px;}
+
+
+        </style>
+    </head>
+    <body class="container-fluid">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              
+              <ul class="nav navbar-nav">
+            <li><a href="http://localhost/library/userlogin.html">USERLOGIN</a></li>
+            <li><a href="http://localhost/library/search.html">SEARCH BOOK</a></li>
+            <li><a href="http://localhost/library/display.php">VIEW BOOK</a></li>
+            <li><a href="http://localhost/library/bookupdate.html">PLACE ORDER</a></li>
+            <li><a href="http://localhost/library/del.html">RETURN BOOK</a></li>
+            <li><a href="http://localhost/library/pay.html">PAY FINE</a></li>
+              </ul>
+            </div>
+          </nav>
+        <div class="page-centered">
+            <div class="logo">
+                <center>
+                <i style='font-size:50px;padding-top: 20px;' class='fas'>&#xf5da;</i></center>
+            </div>
+            <h1 class="login-h1">Pay Fine</h1>
+            <form  method="post" action="pay.php" >
+                <div class="form-group">
+                    <input type="text" placeholder="entry num" name="id" required class="form-control form-input">
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="name" name="name" required class="form-control form-input">
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="book name" name="book_name" required class="form-control form-input">
+                </div>
+                <div class="form-group">                    
+                    <input type="text" placeholder="fine amt" name="fine" required class="form-control form-input">
+                </div>
+               <center><button class="button button2">Pay Fine</button></center> 
+            </form>
